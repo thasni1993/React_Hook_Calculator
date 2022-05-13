@@ -1,0 +1,55 @@
+*{
+    margin:0px;
+    font-family:-apple-system, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    border: 10px solid black;
+    background-color: black;
+    border-radius: 5px;
+}
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(60px, auto);
+}
+input[type="text"]{
+    height: 75px;
+    width: 245px;
+    background-color: black;
+    border: 0px;
+    color: white;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+button{
+    margin: 3px;
+    border: none;
+    border-radius: 32px;
+    background: #252323;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+}
+#zero{
+    grid-column: 1/3;
+}
+.offwhite{
+    background-color: rgb(141, 138, 133);
+}
+.orange-color{
+    background-color: orange;
+}
